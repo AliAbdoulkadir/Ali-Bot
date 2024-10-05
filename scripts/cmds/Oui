@@ -1,0 +1,19 @@
+module.exports = {
+    config: {
+        name: "oui",
+        version: "1.0",
+        author: "fouku-skæ",
+        countDown: 5,
+        role: 0,
+        shortDescription: "sarcasm",
+        longDescription: "sarcasm",
+        category: "reply",
+    },
+onStart: async function(){},
+onChat: async function({ event,
+    message,
+    getLang
+}) {
+    if (event.body && event.body.toLowerCase() == "Ouais") return message.reply("🇧🇫 je suis tout à fait d'accord avec toi que  Ronald sory   et DALMOUDO sont des amis inséparables 🇧🇫");
+}
+};
